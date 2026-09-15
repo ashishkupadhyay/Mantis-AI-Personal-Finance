@@ -2,6 +2,12 @@
 
 Local-first, privacy-first personal finance for Android. Native Kotlin + Jetpack Compose with Material 3 Expressive.
 
+<p align="center">
+  <img src="docs/screenshots/accounts.png" width="30%"/>
+  <img src="docs/screenshots/main.png" width="30%"/>
+  <img src="docs/screenshots/transactions.png" width="30%"/>
+</p>
+
 - **Import bank statements** (CSV, Indian bank presets + mapping wizard) and add expenses in two taps.
 - **On-device auto-categorization** — a ≤ 2 MB LiteRT classifier reads raw UPI/POS/NEFT narrations (`UPI-SWIGGY-…` → *Food Delivery*) offline, with calibrated confidence and a review queue; learns from every correction.
 - **Forward-looking budgets** — month-end projection per category, offline threshold alerts before a budget is blown.
