@@ -3,8 +3,17 @@
 Local-first, privacy-first personal finance for Android. Native Kotlin + Jetpack Compose with Material 3 Expressive.
 
 <img src="docs/screenshots/accounts.png" width="30%"/>
+
+### Setup
+
 <img src="docs/screenshots/main.png" width="100%"/>
+
+### Transaction
+
 <img src="docs/screenshots/transactions.png" width="100%"/>
+
+### Import
+
 <img src="docs/screenshots/import.png" width="100%"/>    
 
 - **Import bank statements** (CSV, Indian bank presets + mapping wizard) and add expenses in two taps.
