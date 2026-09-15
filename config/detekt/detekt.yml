@@ -1,0 +1,116 @@
+# Mantis Detekt configuration — layered on detekt's defaults (buildUponDefaultConfig = true).
+# Only deviations from the defaults are listed here.
+
+build:
+  maxIssues: 0
+
+config:
+  validation: true
+  warningsAsErrors: true
+  # compose-rules options are not declared in the rule set's default config, so exclude them from validation.
+  excludes: 'Compose>CompositionLocalAllowlist>allowedCompositionLocals,Compose>ModifierMissing>checkModifiersForVisibility'
+
+complexity:
+  LongParameterList:
+    # Compose functions legitimately take many parameters; the default (6) is far too strict for UI.
+    functionThreshold: 8
+    constructorThreshold: 8
+    ignoreAnnotated: [ 'Composable' ]
+  LongMethod:
+    threshold: 80
+    ignoreAnnotated: [ 'Composable', 'Preview', 'PreviewMantis' ]
+  TooManyFunctions:
+    thresholdInFiles: 20
+    thresholdInClasses: 20
+    thresholdInInterfaces: 20
+    thresholdInObjects: 20
+    ignoreAnnotatedFunctions: [ 'Composable', 'Preview', 'PreviewMantis' ]
+    # A DAO is one table's whole query surface; splitting it by count would only scatter it.
+    ignoreAnnotated: [ 'Dao' ]
+  CyclomaticComplexMethod:
+    threshold: 18
+
+naming:
+  FunctionNaming:
+    # Composables are PascalCase by convention.
+    ignoreAnnotated: [ 'Composable' ]
+  TopLevelPropertyNaming:
+    active: false
+  MatchingDeclarationName:
+    active: false
+
+style:
+  MagicNumber:
+    active: true
+    ignorePropertyDeclaration: true
+    # Numbers in annotations are declarative (@ProtoNumber field tags, @Config(sdk = [35])).
+    ignoreAnnotation: true
+    ignoreEnums: true
+    ignoreNamedArgument: true
+    ignoreAnnotated: [ 'Composable', 'Preview', 'PreviewMantis' ]
+    ignoreNumbers: [ '-1', '0', '1', '2', '3', '4', '5', '10', '100', '1000' ]
+  UnusedPrivateMember:
+    # Preview functions are private by convention and only invoked by the IDE; PreviewMantis is our multipreview.
+    ignoreAnnotated: [ 'Preview', 'PreviewLightDark', 'PreviewScreenSizes', 'PreviewFontScale', 'PreviewMantis' ]
+  ReturnCount:
+    max: 4
+  MaxLineLength:
+    maxLineLength: 140
+    excludeCommentStatements: true
+  ForbiddenComment:
+    active: false
+  WildcardImport:
+    active: true
+  UnnecessaryAbstractClass:
+    active: false
+
+exceptions:
+  TooGenericExceptionCaught:
+    active: false
+  SwallowedException:
+    active: true
+
+# io.nlopez.compose.rules
+Compose:
+  ComposableAnnotationNaming:
+    active: true
+  ComposableNaming:
+    active: true
+  ComposableParamOrder:
+    active: true
+  CompositionLocalAllowlist:
+    active: true
+    allowedCompositionLocals: [ 'LocalMantisColors', 'LocalReducedMotion', 'LocalHideAmounts', 'LocalMoneyFormatter' ]
+  ContentEmitterReturningValues:
+    active: true
+  DefaultsVisibility:
+    active: true
+  ModifierComposed:
+    active: true
+  ModifierMissing:
+    active: true
+    checkModifiersForVisibility: only_public
+  ModifierNaming:
+    active: true
+  ModifierNotUsedAtRoot:
+    active: true
+  ModifierReused:
+    active: true
+  ModifierWithoutDefault:
+    active: true
+  MultipleEmitters:
+    active: true
+  MutableParams:
+    active: true
+  PreviewAnnotationNaming:
+    active: true
+  PreviewPublic:
+    active: true
+  RememberMissing:
+    active: true
+  UnstableCollections:
+    active: true
+  ViewModelForwarding:
+    active: true
+  ViewModelInjection:
+    active: true

@@ -1,0 +1,72 @@
+# ---------- Android project (repo root) ----------
+*.iml
+.gradle/
+.kotlin/
+.idea/
+build/
+**/build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+.DS_Store
+app/google-services.json
+*.hprof
+*.ap_
+*.aab
+*.apk
+!gradle/wrapper/gradle-wrapper.jar
+
+# Signing material — never commit
+*.jks
+*.keystore
+keystore.properties
+signing/
+
+# ---------- Backend (backend/) ----------
+backend/.venv/
+backend/**/__pycache__/
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.ruff_cache/
+backend/.env
+backend/.env.*
+!backend/.env.example
+backend/*.egg-info/
+backend/htmlcov/
+backend/.coverage
+
+# ---------- ML (ml/) ----------
+ml/.venv/
+ml/**/__pycache__/
+ml/artifacts/
+ml/data/raw/
+ml/data/receipts/images/
+ml/**/*.tflite
+ml/**/*.onnx
+ml/**/*.pt
+ml/**/*.ckpt
+ml/wandb/
+ml/mlruns/
+# DVC-tracked payloads live in remote storage; keep only the .dvc pointers
+ml/data/**/*.csv
+ml/**/*.parquet
+!ml/data/**/*.dvc
+!ml/data/test_v1.parquet
+!ml/items/items_test_v1.parquet
+
+# ---------- Secrets & keys (any location) ----------
+*.pem
+*.key
+*.p12
+secrets/
+**/service-account*.json
+**/*credentials*.json
+
+# ---------- OS / editors ----------
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+!.vscode/extensions.json

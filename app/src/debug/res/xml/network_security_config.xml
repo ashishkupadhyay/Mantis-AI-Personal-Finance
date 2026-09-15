@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Debug-only network policy (NFR-20j): the emulator's host loopback (10.0.2.2) may be reached over cleartext
+    for the local FastAPI backend (doc 03) and a local Ollama/LM Studio endpoint; user-installed CAs are trusted so
+    traffic can be inspected through a proxy. Everything else stays TLS + system CAs, as in release.
+-->
+<network-security-config xmlns:tools="http://schemas.android.com/tools">
+    <!-- Lint cannot tell this file only exists in the debug source set; user CAs are the point here (NFR-20j). -->
+    <base-config
+        cleartextTrafficPermitted="false"
+        tools:ignore="AcceptsUserCertificates">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">10.0.2.2</domain>
+        <domain includeSubdomains="false">localhost</domain>
+    </domain-config>
+</network-security-config>

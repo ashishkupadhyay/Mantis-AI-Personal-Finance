@@ -1,0 +1,43 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":semanticCommits", ":dependencyDashboard"],
+  "timezone": "Asia/Kolkata",
+  "schedule": ["before 6am on monday"],
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "description": "AGP bundles built-in Kotlin (ADR-0001 D1): bump AGP, Kotlin, the Compose compiler plugin and KSP together, manually.",
+      "groupName": "Android build toolchain",
+      "matchPackageNames": [
+        "com.android.application", "com.android.library", "com.android.tools.build:gradle",
+        "org.jetbrains.kotlin.jvm", "org.jetbrains.kotlin.plugin.compose", "org.jetbrains.kotlin.plugin.serialization",
+        "org.jetbrains.kotlin:kotlin-gradle-plugin", "org.jetbrains.kotlin:compose-compiler-gradle-plugin",
+        "com.google.devtools.ksp", "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin"
+      ],
+      "automerge": false
+    },
+    {
+      "description": "Material 3 is pinned to the Expressive alpha line (ADR-0001 D2); review alpha bumps against the design-system screenshots.",
+      "groupName": "Compose Material 3 (alpha)",
+      "matchPackagePatterns": ["^androidx\\.compose\\.material3:"],
+      "ignoreUnstable": false,
+      "automerge": false
+    },
+    {
+      "description": "Keep every other AndroidX/Compose dependency on stable releases.",
+      "matchPackagePatterns": ["^androidx\\.", "^com\\.google\\."],
+      "ignoreUnstable": true
+    },
+    {
+      "description": "AppFunctions has no stable release yet.",
+      "matchPackagePatterns": ["^androidx\\.appfunctions:"],
+      "ignoreUnstable": false
+    },
+    {
+      "description": "Test and lint tooling can auto-merge on green CI.",
+      "matchPackagePatterns": ["^io\\.github\\.takahirom\\.roborazzi", "^org\\.robolectric", "^io\\.mockk", "^app\\.cash\\.turbine", "^io\\.kotest", "^com\\.lemonappdev", "^io\\.gitlab\\.arturbosch\\.detekt", "^io\\.nlopez\\.compose\\.rules"],
+      "automerge": true,
+      "matchUpdateTypes": ["minor", "patch"]
+    }
+  ]
+}

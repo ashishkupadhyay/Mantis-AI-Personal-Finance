@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Release network policy (NFR-15, NFR-20j): TLS only, system certificate authorities only. User-typed
+    private-network LLM hosts (FR-LLM-9) are the one runtime exception and are handled by the isolated LLM client,
+    not by widening this file. The debug source set overrides this file to allow the local backend and proxies.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

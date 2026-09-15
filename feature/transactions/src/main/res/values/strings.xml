@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared actions -->
+    <string name="action_back">Back</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_ok">OK</string>
+    <string name="action_apply">Apply</string>
+    <string name="action_save">Save</string>
+    <string name="action_save_add_another">Save &amp; add another</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_more">More</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_recategorize">Recategorize</string>
+    <string name="action_tag">Add tag</string>
+    <string name="action_exclude">Exclude from budgets</string>
+    <string name="action_include">Include in budgets</string>
+    <string name="action_transfer">Mark as transfer</string>
+    <string name="action_clear_selection">Clear selection</string>
+
+    <string name="type_expense">Expense</string>
+    <string name="type_income">Income</string>
+    <string name="type_transfer">Transfer</string>
+
+    <!-- List -->
+    <string name="add_transaction">Add transaction</string>
+    <string name="action_import_csv">Import CSV</string>
+    <string name="search_placeholder">Search transactions</string>
+    <string name="search_clear">Clear search</string>
+    <string name="day_today">Today</string>
+    <string name="day_yesterday">Yesterday</string>
+    <string name="empty_title">No transactions yet</string>
+    <string name="empty_body">Add one with the + button, or seed sample data from Settings › Developer.</string>
+    <string name="empty_filtered_title">Nothing matches</string>
+    <string name="empty_filtered_body">Try a different search or clear the filters.</string>
+    <plurals name="selection_count">
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d selected</item>
+    </plurals>
+    <string name="tag_dialog_title">Tag selected transactions</string>
+    <string name="tag_dialog_label">Tag name</string>
+
+    <!-- Filters -->
+    <string name="filter_clear_all">Clear all filters</string>
+    <string name="filter_accounts">Account</string>
+    <plurals name="filter_n_accounts">
+        <item quantity="one">%1$d account</item>
+        <item quantity="other">%1$d accounts</item>
+    </plurals>
+    <string name="filter_categories">Category</string>
+    <plurals name="filter_n_categories">
+        <item quantity="one">%1$d category</item>
+        <item quantity="other">%1$d categories</item>
+    </plurals>
+    <string name="filter_type">Type</string>
+    <string name="filter_flags">Only show</string>
+    <string name="filter_needs_review">Needs review</string>
+    <string name="filter_uncategorized">Uncategorized</string>
+    <string name="filter_hide_excluded">Hide excluded</string>
+    <string name="filter_date">Date</string>
+    <string name="filter_date_this_month">This month</string>
+    <string name="filter_date_last_month">Last month</string>
+    <string name="filter_date_last_90_days">Last 90 days</string>
+    <string name="filter_date_this_year">This year</string>
+    <string name="filter_date_all_time">All time</string>
+    <string name="filter_date_custom">Custom…</string>
+    <string name="filter_tags">Tags</string>
+    <plurals name="filter_n_tags">
+        <item quantity="one">%1$d tag</item>
+        <item quantity="other">%1$d tags</item>
+    </plurals>
+    <string name="filter_no_tags">You have no tags yet. Add one from a transaction.</string>
+    <string name="filter_apply">Apply</string>
+
+    <!-- Detail -->
+    <string name="picker_uncategorized">Uncategorized</string>
+    <string name="detail_placeholder_title">Pick a transaction</string>
+    <string name="detail_placeholder_body">Its details show up here.</string>
+    <string name="detail_missing">This transaction no longer exists.</string>
+    <string name="detail_unknown_account">Unknown account</string>
+    <string name="detail_account">Account</string>
+    <string name="detail_date">Date</string>
+    <string name="detail_merchant">Merchant</string>
+    <string name="detail_notes">Notes</string>
+    <string name="detail_tags">Tags</string>
+    <string name="detail_split">Split</string>
+    <string name="detail_transfer_to">Transfer to %1$s</string>
+    <string name="detail_transfer_from">Transfer from %1$s</string>
+    <string name="detail_open_pair">Open</string>
+    <string name="detail_excluded_note">Excluded from budgets and reports.</string>
+    <string name="detail_delete_title">Delete this transaction?</string>
+    <string name="detail_delete_body">You can undo for a few seconds afterwards.</string>
+    <string name="detail_choose_category">Choose a category</string>
+    <string name="detail_rule_offer">Always categorize “%1$s” as %2$s?</string>
+    <string name="detail_rule_offer_no">No</string>
+    <string name="detail_rule_offer_yes">Create rule</string>
+    <string name="detail_wrong_category">This is wrong</string>
+    <string name="provenance_none">Not categorized yet</string>
+    <string name="provenance_user">You chose this</string>
+    <string name="provenance_rule">From your rule</string>
+    <string name="provenance_ai">Suggested by your AI provider</string>
+    <string name="provenance_import">From the import file</string>
+    <string name="provenance_model">Categorized by Mantis · %1$d%%</string>
+    <string name="provenance_model_plain">Categorized by Mantis</string>
+
+    <!-- Add / edit -->
+    <string name="add_title">New transaction</string>
+    <string name="edit_title">Edit transaction</string>
+    <string name="add_amount_error">Enter an amount</string>
+    <string name="add_more_categories">More…</string>
+    <string name="add_account">Account</string>
+    <string name="add_from_account">From</string>
+    <string name="add_to_account">To</string>
+    <string name="add_pick_date">Pick date</string>
+    <string name="add_pick_time">Pick time</string>
+    <string name="add_merchant">Merchant or description</string>
+    <string name="add_description">Description</string>
+    <string name="add_notes">Notes</string>
+    <string name="add_tags">Add a tag and press done</string>
+    <string name="add_remove_tag">Remove tag %1$s</string>
+    <string name="add_exclude">Exclude from budgets and reports</string>
+    <string name="key_backspace">Backspace</string>
+    <string name="key_clear">C</string>
+    <string name="duplicate_title">Looks like a duplicate</string>
+    <string name="duplicate_body">“%1$s” for %2$s on %3$s is already recorded. Save this one anyway?</string>
+    <string name="duplicate_save_anyway">Save anyway</string>
+</resources>

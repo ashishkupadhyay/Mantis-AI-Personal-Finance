@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="import_title">Import statement</string>
+    <string name="action_close">Close</string>
+    <string name="action_back">Back</string>
+    <string name="action_next">Next</string>
+    <string name="action_done">Done</string>
+    <string name="action_undo_import">Undo import</string>
+    <plurals name="action_import_n">
+        <item quantity="one">Import %1$d row</item>
+        <item quantity="other">Import %1$d rows</item>
+    </plurals>
+    <plurals name="action_review_n">
+        <item quantity="one">Review %1$d</item>
+        <item quantity="other">Review %1$d</item>
+    </plurals>
+
+    <string name="step_source">Source</string>
+    <string name="step_map">Map columns</string>
+    <string name="step_account">Account</string>
+    <string name="step_preview">Preview</string>
+    <string name="step_import">Import</string>
+    <string name="step_counter">Step %1$d of %2$d · %3$s</string>
+
+    <string name="source_title">Bring in a bank statement</string>
+    <string name="source_body">Export a CSV from your bank’s net banking or app, then pick it here. Nothing leaves your phone.</string>
+    <string name="source_pick">Choose a CSV file</string>
+    <string name="source_presets">Recognises statements from %1$s, plus generic Date / Description / Amount files.</string>
+
+    <string name="detected_preset">Looks like a %1$s statement</string>
+    <string name="detected_unknown">Unknown layout — tell Mantis what each column means</string>
+    <string name="detected_details">%1$s · %2$s-separated · header on line %3$d</string>
+    <string name="delimiter_comma">comma</string>
+    <string name="delimiter_semicolon">semicolon</string>
+    <string name="delimiter_tab">tab</string>
+
+    <string name="map_columns">Columns</string>
+    <string name="map_column_n">Column %1$d</string>
+    <string name="map_use_preset">Use a bank preset</string>
+    <string name="map_date_format">Date format</string>
+    <string name="map_date_custom">Custom pattern (e.g. dd/MM/yyyy)</string>
+    <string name="role_date">Date</string>
+    <string name="role_description">Description</string>
+    <string name="role_debit">Debit</string>
+    <string name="role_credit">Credit</string>
+    <string name="role_amount">Amount</string>
+    <string name="role_dr_cr">Dr / Cr</string>
+    <string name="role_balance">Balance</string>
+    <string name="role_reference">Reference</string>
+    <string name="role_category">Category</string>
+    <string name="role_ignore">Ignore</string>
+
+    <string name="account_title">Which account is this?</string>
+    <string name="account_body">Every row goes into this account. Duplicates are checked against it.</string>
+    <string name="account_none">Add an account first (Settings › Accounts &amp; cards).</string>
+
+    <string name="preview_total">Rows</string>
+    <string name="preview_new">New</string>
+    <string name="preview_duplicates">Duplicates</string>
+    <string name="preview_errors">Errors</string>
+    <string name="preview_import_duplicates">Import duplicates anyway</string>
+    <plurals name="preview_rows">
+        <item quantity="one">First row</item>
+        <item quantity="other">First %1$d rows</item>
+    </plurals>
+    <string name="row_new">new</string>
+    <string name="row_duplicate">duplicate</string>
+    <string name="row_error">error</string>
+
+    <string name="phase_parsing">Parsing…</string>
+    <string name="phase_categorizing">Categorizing…</string>
+    <string name="phase_saving">Saving…</string>
+    <plurals name="summary_imported">
+        <item quantity="one">%1$d transaction imported</item>
+        <item quantity="other">%1$d transactions imported</item>
+    </plurals>
+    <string name="summary_undone">Import undone</string>
+    <plurals name="summary_undone_detail">
+        <item quantity="one">The %1$d transaction it added has been removed.</item>
+        <item quantity="other">The %1$d transactions it added have been removed.</item>
+    </plurals>
+    <string name="summary_separator">" · "</string>
+    <plurals name="summary_categorized">
+        <item quantity="one">%1$d categorized automatically</item>
+        <item quantity="other">%1$d categorized automatically</item>
+    </plurals>
+    <plurals name="summary_review">
+        <item quantity="one">%1$d needs review</item>
+        <item quantity="other">%1$d need review</item>
+    </plurals>
+    <plurals name="summary_duplicates">
+        <item quantity="one">%1$d duplicate skipped</item>
+        <item quantity="other">%1$d duplicates skipped</item>
+    </plurals>
+    <plurals name="summary_errors">
+        <item quantity="one">%1$d row with an error</item>
+        <item quantity="other">%1$d rows with errors</item>
+    </plurals>
+</resources>

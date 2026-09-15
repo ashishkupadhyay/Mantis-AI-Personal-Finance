@@ -1,0 +1,33 @@
+name: Backend CI
+
+# Activated in M4 when backend/ gains a pyproject; until then the job is skipped.
+on:
+  push:
+    branches: [main]
+    paths: ["backend/**", ".github/workflows/backend-ci.yml"]
+  pull_request:
+    paths: ["backend/**", ".github/workflows/backend-ci.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Ruff, mypy, pytest
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    if: hashFiles('backend/pyproject.toml') != ''
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e ".[dev]"
+      - run: ruff check . && ruff format --check .
+      - run: mypy .
+      - run: pytest -q

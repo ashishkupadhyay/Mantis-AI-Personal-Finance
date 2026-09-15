@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Mantis</string>
+
+    <string name="action_back">Back</string>
+
+    <string name="lock_title">Mantis is locked</string>
+    <string name="lock_unlock">Unlock</string>
+    <string name="lock_prompt_title">Unlock Mantis</string>
+    <string name="lock_prompt_subtitle">Use your fingerprint, face or device PIN</string>
+
+    <string name="placeholder_title">%1$s is on its way</string>
+    <string name="placeholder_body">This screen lands in %1$s of the implementation plan.</string>
+    <string name="placeholder_open_transactions">Open transactions</string>
+    <string name="placeholder_catalogue_title">Design system</string>
+
+    <string name="unavailable_title">That screen isn\'t available</string>
+    <string name="unavailable_body">The link was valid, but this version of Mantis doesn\'t include that screen yet.</string>
+</resources>

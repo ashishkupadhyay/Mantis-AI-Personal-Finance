@@ -1,0 +1,34 @@
+name: ML eval gate
+
+# Activated in M2 when ml/ gains its evaluation harness (doc 04 §10); the classifier must not ship below the
+# accuracy/latency gates. Until then the job is skipped.
+on:
+  pull_request:
+    paths: ["ml/**", ".github/workflows/ml-eval.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evaluate:
+    name: Classifier eval gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    if: hashFiles('ml/pyproject.toml') != ''
+    defaults:
+      run:
+        working-directory: ml
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e ".[dev]"
+      - run: python -m mantis_ml.eval --gate
+      - uses: actions/upload-artifact@v4
+        with:
+          name: eval-report
+          path: ml/build/eval/**
+          if-no-files-found: ignore

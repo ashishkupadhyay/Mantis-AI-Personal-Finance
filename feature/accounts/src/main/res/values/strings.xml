@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accounts_title">Accounts</string>
+    <string name="action_back">Back</string>
+    <string name="accounts_add">Add account</string>
+    <string name="accounts_net">Net position</string>
+    <string name="accounts_assets">Assets</string>
+    <string name="accounts_liabilities">Owed</string>
+    <string name="accounts_archived">Archived</string>
+    <string name="accounts_empty_title">No accounts yet</string>
+    <string name="accounts_empty_body">Add the bank, card or wallet you spend from. Balances update as transactions arrive.</string>
+    <string name="accounts_masked_number">•••• %1$s</string>
+    <string name="accounts_owed">owed</string>
+
+    <string name="account_type_bank">Bank</string>
+    <string name="account_type_credit_card">Credit card</string>
+    <string name="account_type_cash">Cash</string>
+    <string name="account_type_wallet">Wallet</string>
+    <string name="account_type_investment">Investment</string>
+    <string name="account_type_loan">Loan</string>
+
+    <string name="account_detail_owed">%1$s owed</string>
+    <string name="account_detail_opening">Opening balance %1$s on %2$s</string>
+    <plurals name="account_detail_statement_in">
+        <item quantity="one">Statement in %1$d day</item>
+        <item quantity="other">Statement in %1$d days</item>
+    </plurals>
+    <plurals name="account_detail_due_in">
+        <item quantity="one">Bill due in %1$d day</item>
+        <item quantity="other">Bill due in %1$d days</item>
+    </plurals>
+    <string name="account_detail_due_today">Bill due today</string>
+    <string name="account_detail_cycle_spend">Spent this cycle</string>
+    <string name="account_detail_transactions">Transactions</string>
+    <string name="account_detail_no_transactions">No transactions on this account yet.</string>
+    <string name="account_detail_edit">Edit</string>
+    <string name="account_detail_archive">Archive</string>
+    <string name="account_detail_unarchive">Unarchive</string>
+    <string name="account_detail_delete">Delete</string>
+    <string name="account_detail_delete_title">Delete %1$s?</string>
+    <string name="account_detail_delete_body">Every transaction on this account will be deleted too. Archive it instead to keep the history.</string>
+    <string name="account_detail_missing">This account no longer exists.</string>
+    <string name="action_cancel">Cancel</string>
+
+    <string name="editor_new_title">New account</string>
+    <string name="editor_edit_title">Edit account</string>
+    <string name="editor_save">Save</string>
+    <string name="editor_name">Name</string>
+    <string name="editor_name_error">Give the account a name</string>
+    <string name="editor_type">Type</string>
+    <string name="editor_institution">Institution</string>
+    <string name="editor_institution_none">None</string>
+    <string name="editor_last4">Last 4 digits (optional)</string>
+    <string name="editor_last4_error">Enter exactly four digits</string>
+    <string name="editor_currency">Currency</string>
+    <string name="editor_opening_balance">Opening balance</string>
+    <string name="editor_opening_balance_error">Enter a number</string>
+    <string name="editor_opening_date">Opening date</string>
+    <string name="editor_statement_day">Statement day: %1$d</string>
+    <string name="editor_due_day">Payment due day: %1$d</string>
+    <string name="editor_colour">Colour</string>
+    <string name="editor_icon">Icon</string>
+    <string name="editor_pick_date">Pick date</string>
+    <string name="editor_date_ok">OK</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_back">Back</string>
+    <string name="onboarding_get_started">Get started</string>
+
+    <string name="onboarding_page1_title">Bring your statements in</string>
+    <string name="onboarding_page1_body">Import CSV exports from any Indian bank or wallet. Duplicates are caught, and every import can be undone.</string>
+    <string name="onboarding_page2_title">Categorised on your phone</string>
+    <string name="onboarding_page2_body">A small on-device model sorts your spending. Nothing leaves the device unless you decide to connect your own AI.</string>
+    <string name="onboarding_page3_title">Budgets that keep pace</string>
+    <string name="onboarding_page3_body">See where the month is heading before it ends, and get a nudge when a budget is about to slip.</string>
+
+    <string name="onboarding_setup_title">Set up Mantis</string>
+    <string name="onboarding_currency">Home currency</string>
+    <string name="onboarding_month_start">Month starts on day</string>
+    <string name="onboarding_month_start_hint">Pick your salary day so budgets line up with your pay cycle.</string>
+    <string name="onboarding_create_defaults">Create default categories and a sample budget</string>
+    <string name="onboarding_app_lock">Require unlock to open Mantis</string>
+    <string name="onboarding_app_lock_unavailable">No screen lock or biometrics set up on this device</string>
+    <string name="onboarding_continue_local">Continue without account</string>
+    <string name="onboarding_sign_in_google">Sign in with Google</string>
+    <string name="onboarding_sign_in_soon">Sync and sign-in arrive with a later update. Everything works offline.</string>
+    <string name="onboarding_page_indicator">Page %1$d of %2$d</string>
+</resources>

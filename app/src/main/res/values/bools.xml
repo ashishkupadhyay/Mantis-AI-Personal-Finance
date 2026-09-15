@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Only the `benchmark` build type flips this (src/benchmark/res): it unlocks seeding for macrobenchmarks. -->
+    <bool name="mantis_benchmark_hooks">false</bool>
+</resources>

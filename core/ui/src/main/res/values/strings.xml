@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_home">Home</string>
+    <string name="nav_transactions">Transactions</string>
+    <string name="nav_budgets">Budgets</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Category picker (shared by transactions, rules, budgets) -->
+    <string name="picker_search">Find a category</string>
+    <string name="picker_uncategorized">Uncategorized</string>
+    <string name="picker_no_matches">No categories match.</string>
+</resources>

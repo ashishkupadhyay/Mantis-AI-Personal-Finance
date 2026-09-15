@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_back">Back</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_hide">Hide</string>
+    <string name="action_unhide">Unhide</string>
+    <string name="action_move_up">Move up</string>
+    <string name="action_move_down">Move down</string>
+
+    <!-- Categories -->
+    <string name="categories_title">Categories</string>
+    <string name="categories_expense">Expenses</string>
+    <string name="categories_income">Income</string>
+    <string name="categories_group">Group</string>
+    <string name="categories_hidden">Hidden</string>
+    <string name="categories_add_group">New group</string>
+    <string name="categories_add_leaf">Add category here</string>
+    <string name="categories_actions_for">Actions for %1$s</string>
+
+    <!-- Category editor -->
+    <string name="editor_new_title">New category</string>
+    <string name="editor_edit_title">Edit category</string>
+    <string name="editor_name">Name</string>
+    <string name="editor_name_error">Give it a name</string>
+    <string name="editor_kind">Kind</string>
+    <string name="editor_group">Group</string>
+    <string name="editor_is_group">This is a group</string>
+    <string name="editor_icon">Icon</string>
+    <string name="editor_colour">Colour</string>
+    <string name="editor_colour_auto">Auto</string>
+
+    <!-- Rules -->
+    <string name="rules_title">Rules</string>
+    <string name="rules_subtitle">Checked top to bottom before anything else categorizes</string>
+    <string name="rules_add">New rule</string>
+    <string name="rules_empty_title">No rules yet</string>
+    <string name="rules_empty_body">Rules categorize new transactions the moment they arrive: “contains SWIGGY → Food Delivery”.</string>
+    <string name="rules_row_summary">%1$s · %2$s → %3$s</string>
+    <string name="rules_missing_category">(missing category)</string>
+    <string name="rules_actions_for">Actions for rule %1$s</string>
+    <string name="rules_apply_existing">Apply to existing transactions</string>
+    <string name="rule_new_title">New rule</string>
+    <string name="rule_edit_title">Edit rule</string>
+    <string name="rule_when">When the transaction…</string>
+    <string name="rule_then">…categorize it as</string>
+    <string name="rule_pattern">Text to match</string>
+    <string name="rule_pattern_regex">Regular expression</string>
+    <string name="rule_pattern_hint">Case doesn’t matter.</string>
+    <string name="rule_pattern_hint_regex">RE2 syntax, case-insensitive, up to 200 characters.</string>
+    <string name="rule_preview">Would match, for example</string>
+    <string name="rule_pick_category">Pick a category</string>
+    <string name="rule_apply_existing">Also apply to existing transactions</string>
+    <string name="match_contains">contains</string>
+    <string name="match_starts_with">starts with</string>
+    <string name="match_regex">matches regex</string>
+    <string name="match_merchant">merchant is</string>
+    <string name="field_description">description</string>
+    <string name="field_merchant">merchant</string>
+</resources>
