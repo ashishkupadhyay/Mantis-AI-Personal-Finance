@@ -2,7 +2,7 @@
 
 Local-first, privacy-first personal finance for Android. Native Kotlin + Jetpack Compose with Material 3 Expressive.
 
-<img src="docs/screenshots/accounts.png" width="30%"/>
+<img src="docs/screenshots/accounts.gif" width="30%"/>
 
 ### Setup
 
